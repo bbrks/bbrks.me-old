@@ -10,7 +10,7 @@ module ReadingTimeFilter
 
 		words = input.split.size;
 		minutes = ( words / words_per_minute ).floor
-		minutes > 0 ? " ~ #{minutes} minuted read" : ""
+		minutes > 0 ? " ~ #{minutes} minute read" : ""
 	end
 end
 
