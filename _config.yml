@@ -1,3 +1,16 @@
-name: Ben's Blog
-description: Development, Design, Photography and Life
-pygments: true
+title : Ben's Blog
+tagline : development, design, photography and life.
+
+author :
+  name : Ben Brooks
+  email : ben@bbrks.me
+  url : http://bbrks.me
+  facebook: bbrks
+  flickr: bbrks
+  twitter : bbrks_
+  linkedin: bbrks
+  github : bbrks
+
+pygments : true
+permalink : /:title/
+relative_permalinks : true

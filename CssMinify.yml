@@ -1,4 +1,5 @@
 files: [
     'css/reset.css',
-    'css/main.css'
+    'css/main.css',
+    'css/syntax.css'
 ]
