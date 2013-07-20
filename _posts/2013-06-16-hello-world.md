@@ -24,7 +24,7 @@ showing a snippet of Java I wrote last year regarding [Word Ladders](http://en.w
 {% highlight java %}
 /**
  * Reads in a number of 'us*.dict' files and creates the appropriate data
- * structure
+ * structure.
  *
  * @param directory The directory which contains 'us*.dict' files
  * @param noOfFiles The number of files to read in
