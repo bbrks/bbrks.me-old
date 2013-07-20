@@ -12,5 +12,6 @@ author :
   github : bbrks
 
 pygments : true
+baseurl : /blog
 permalink : /:title/
 relative_permalinks : true
