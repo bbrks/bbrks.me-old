@@ -1,4 +1,4 @@
-.highlight  { background: #f0f0f0; font-family: monospace; font-size: 0.75em; overflow-x: auto; overflow-y: hidden; }
+.highlight  { background: #f0f0f0; font-family: monospace; font-size: 0.75em; overflow-x: auto; overflow-y: hidden; line-height: 1.5em; margin: 1.5em 0; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
