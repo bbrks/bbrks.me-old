@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
-
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
+        <meta charset="utf-8" />
+        <title>{{ site.title }} | {{ site.tagline }}</title>
+        
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' type='text/css' />
+        <link rel="stylesheet" href="{% minified_css_file %}" type="text/css" />
     </head>
     <body>
 
-        <div class="container">
-          <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
-            </div>
+        <div id="topbar">
+            <ul class="social">
+                <li><a href="http://facebook.com/{{ site.author.facebook }}" title="{{ site.author.name }} on Facebook">f</a></li>
+                <li><a href="http://flickr.com/photos/{{ site.author.flickr }}" title="{{ site.author.name }} on Flickr">l</a></li>
+				<li><a href="http://twitter.com/{{ site.author.twitter }}" title="{{ site.author.name }} on Twitter">t</a></li>
+				<li><a href="http://uk.linkedin.com/in/{{ site.author.linkedin }}" title="{{ site.author.name }} on LinkedIn">i</a></li>
+				<li><a href="http://github.com/{{ site.author.github }}" title="{{ site.author.name }} on GitHub">g</a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+        
 
-                {{ content }}
-
-            <div class="footer">
-              <div class="contact">
-                <p>
-                  Your Name<br />
-                  What You Are<br />
-                  your@email.com
-                </p>
-              </div>
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
-                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
-                </p>
-              </div>
+        <div id="content">
+            
+            {% for post in site.posts %}
+            <div class="post">
+                <h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+                <div class="datetime">{{ post.date | date_to_string }}{{ post.content | reading_time }}</div>
+                {{ post.content }}
             </div>
-          </div>
-        </div> <!-- /container -->
+            {% endfor %}
+            
+        </div>
+        
+        <div id="footer">
+            <ul class="social">
+                <li><a href="http://facebook.com/{{ site.author.facebook }}" title="{{ site.author.name }} on Facebook">f</a></li>
+                <li><a href="http://flickr.com/photos/{{ site.author.flickr }}" title="{{ site.author.name }} on Flickr">l</a></li>
+				<li><a href="http://twitter.com/{{ site.author.twitter }}" title="{{ site.author.name }} on Twitter">t</a></li>
+				<li><a href="http://uk.linkedin.com/in/{{ site.author.linkedin }}" title="{{ site.author.name }} on LinkedIn">i</a></li>
+				<li><a href="http://github.com/{{ site.author.github }}" title="{{ site.author.name }} on GitHub">g</a></li>
+            </ul>
+            <div class="clearfix"></div>
+            <p>Made with <span class="heart">&#9829;</span> and <a href="http://jekyllrb.com/" title="Jekyll - A blog-aware, static site generator in Ruby.">Jekyll</a></p>
+            <p>&copy; {{ site.time | date: "%Y" }} <a href="{{ site.author.url }}">{{ site.author.name }}</a></p>
+        </div>
 
     </body>
 </html>
