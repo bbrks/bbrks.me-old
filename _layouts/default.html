@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>{{ site.title }} | {{ site.tagline }}</title>
+        <title>{{ page.title }} | {{ site.title }}</title>
         
         <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' type='text/css' />
         <link rel="stylesheet" href="{{ site.baseurl }}{% minified_css_file %}" type="text/css" />
@@ -24,13 +24,7 @@
 
         <div id="content">
             
-            {% for post in site.posts %}
-            <div class="post">
-                <h2><a title="{{ post.title }}">{{ post.title }}</a></h2>
-                <div class="datetime">{{ post.date | date_to_string }}{{ post.content | reading_time }}</div>
-                {{ post.content }}
-            </div>
-            {% endfor %}
+            {{ content }}
             
         </div>
         
