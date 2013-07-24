@@ -100,7 +100,7 @@ h3 {
 
 .post p + p {
     padding-top: 1em;
-    text-indent: 3em;
+/*    text-indent: 3em;*/
 }
 
 blockquote p:first-letter {
