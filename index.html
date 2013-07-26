@@ -5,7 +5,7 @@ title: Development, Design, Photography and Life
 
 {% for post in site.posts %}
 <div class="post">
-    <h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+    <h2><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
     <div class="datetime">{{ post.date | date_to_string }}{{ post.content | reading_time }}</div>
     {{ post.content }}
 </div>
