@@ -2,7 +2,7 @@
 layout: default
 ---
  <div class="post">
-    <h2><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
+    <h2><a href="{{ site.baseurl }}{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
     <div class="datetime">{{ page.date | date_to_string }}{{ content | reading_time }}</div>
     {{ content }}
 </div>
