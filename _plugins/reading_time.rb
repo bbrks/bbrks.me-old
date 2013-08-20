@@ -6,7 +6,7 @@
 
 module ReadingTimeFilter
 	def reading_time( input )
-		words_per_minute = 180
+		words_per_minute = 130
 
 		words = input.split.size;
 		minutes = ( words / words_per_minute ).floor
