@@ -18,12 +18,12 @@
 
 		<div class="postheader parallax" style="background-image:url('{{ site.baseurl }}/assets/posts{{ page.id }}/banner.jpg');">
 			<div class="header header-{{ page.headertype }} col-80">
-				<h1><a href="/">Ben Brooks</a></h1>
+				<h1><a href="/" title="{{ site.author.name }}' Website">{{ site.author.name }}</a></h1>
 				<ul class="navmenu">
-					<li><a href="/">Home</a></li>
+					<li><a href="/" title="{{ site.author.name }}' Website">Home</a></li>
 					<li><a href="http://twitter.com/{{ site.author.twitter }}" title="{{ site.author.name }} on Twitter">Twitter</a></li>
 					<li><a href="http://github.com/{{ site.author.github }}" title="{{ site.author.name }} on GitHub">GitHub</a></li>
-					<li><a href="/feed.xml">RSS</a></li>
+					<li><a href="/feed.xml" title="{{ site.author.name }}' RSS Feed">RSS</a></li>
 				</ul>
 				<div class="clearfix"></div>
 			</div>
