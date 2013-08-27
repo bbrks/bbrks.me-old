@@ -258,6 +258,15 @@ p img {
 }
 
 @media only screen
+and (max-height : 700px) {
+
+	.postheader {
+		height: 210px;
+	}
+
+}
+
+@media only screen
 and (max-width : 800px) {
 
 	.navmenu li {
