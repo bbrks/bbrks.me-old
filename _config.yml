@@ -12,7 +12,8 @@ author :
   linkedin: bbrks
   github : bbrks
 
+paginate: 5
 pygments : true
-baseurl : /blog
+baseurl :
 permalink : /:title/
 relative_permalinks : true

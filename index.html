@@ -1,12 +1,27 @@
 ---
 layout: default
 title: Development, Design, Photography and Life
+headertype: dark
 ---
+<div class="post col-fixed-800">
 
-{% for post in site.posts %}
-<div class="post">
-    <h2><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-    <div class="datetime">{{ post.date | date_to_string }}{{ post.content | reading_time }}</div>
-    {{ post.content }}
+	<h3>Posts</h3>
+	<ul class="postslist">
+	{% for post in paginator.posts %}
+		<li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}<span class="readingtime">{{ post.content | reading_time }}</span></li>
+	{% endfor %}
+	</ul>
+	<div class="pagination">
+		{% if paginator.previous_page %}
+			{% if paginator.previous_page == 1 %}
+				<a href="/" title="Previous Page">&laquo; Previous</a>
+			{% else %}
+			<a href="/page{{ paginator.previous_page }}/" title="Previous Page">&laquo; Previous</a>
+			{% endif %}
+		{% endif %}
+
+		{% if paginator.next_page %}
+		<a href="/page{{ paginator.next_page }}/" title="Next Page">Next &raquo;</a>
+		{% endif %}
+	</div>
 </div>
-{% endfor %}

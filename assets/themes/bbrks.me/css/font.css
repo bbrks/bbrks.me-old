@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'bbrks_icons';
+    font-style: normal;
+    font-weight: 400;
+	src: url('../font/bbrks_icons.eot');
+	src: url('../font/bbrks_icons.eot?#iefix') format('embedded-opentype'),
+		 url('../font/bbrks_icons.woff') format('woff'),
+		 url('../font/bbrks_icons.ttf') format('truetype'),
+		 url('../font/bbrks_icons.svg#bbrks_icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

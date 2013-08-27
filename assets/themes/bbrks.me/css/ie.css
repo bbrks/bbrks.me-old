@@ -1,0 +1,15 @@
+h1 a, h2 a, .navmenu li a {
+	color: #444;
+}
+
+.header-light h1 a, .header-light .navmenu li a {
+	color: #fff;
+}
+
+.header-dark h1 a, .header-dark .navmenu li a {
+	color: #444;
+}
+
+.col-fixed-800 {
+	width: 800px;
+}
