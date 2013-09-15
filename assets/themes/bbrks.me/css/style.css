@@ -135,7 +135,6 @@ h2 {
 	font-size: 1.5em;
 	color: #ccc;
 	font-style: italic;
-	margin-bottom: 1.5em;
 }
 
 .readingtime {
@@ -144,13 +143,13 @@ h2 {
 }
 
 h3 {
-	padding-bottom: 1em;
+	padding: 1em 0;
 	font-size: 1.4em;
 	line-height: 1.5em;
 }
 
 .post p + p {
-	padding-top: 1em;
+	padding-top: 2em;
 }
 
 blockquote p:first-letter {
@@ -182,6 +181,15 @@ blockquote,.highlight {
 p img {
 	width: 100%;
 	max-width: 100%;
+}
+
+ol li {
+	list-style: decimal;
+	margin-left: 2.5em;
+}
+
+ol li p {
+	padding: 0 0 1em 0 !important;
 }
 
 /* start footer */
