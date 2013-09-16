@@ -240,6 +240,7 @@ ol li p {
 	text-align: center;
 	color: #ccc;
 	margin-bottom: 2em;
+	overflow: hidden;
 }
 
 /* end footer */
