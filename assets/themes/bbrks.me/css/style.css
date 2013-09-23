@@ -133,12 +133,12 @@ h2 {
 .datetime {
 	text-align: center;
 	font-size: 1.5em;
-	color: #ccc;
+	color: #aaa;
 	font-style: italic;
 }
 
 .readingtime {
-	color: #ccc;
+	color: #aaa;
 	font-style: italic;
 }
 
@@ -216,7 +216,7 @@ ol li p {
 
 .social li a {
 	padding: 0.4em;
-	color: #ccc;
+	color: #aaa;
 
 	-webkit-transition: color .2s;
 	-moz-transition: color .2s;
@@ -238,7 +238,7 @@ ol li p {
 
 .footer {
 	text-align: center;
-	color: #ccc;
+	color: #aaa;
 	margin-bottom: 2em;
 	overflow: hidden;
 }
