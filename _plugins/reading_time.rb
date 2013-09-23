@@ -1,6 +1,6 @@
 # Outputs the reading time
 
-# Read this in “about 4 minutes”
+# E.g. " ~ 4 minute read"
 # Put into your _plugins dir in your Jekyll site
 # Usage: Read this in about {{ page.content | reading_time }}
 
