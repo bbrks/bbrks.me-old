@@ -7,11 +7,11 @@ body {
 
 a {
 	color: #f66;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 a:hover {
-	text-decoration: underline;
+	font-weight: bold;
 }
 
 strong {
@@ -195,6 +195,10 @@ ol li p {
 /* start footer */
 .icon {
 	font-family: 'bbrks_icons';
+}
+
+a.icon {
+	text-decoration: none;
 }
 
 .social {
